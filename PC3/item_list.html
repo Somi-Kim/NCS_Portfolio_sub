@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>광동제약</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/sub.css">
+</head>
+<body>
+    <!-- css&js in header -->
+    <div id="top_btn"></div>
+
+    <div id="wrap">
+        <header>
+            <div class="header_in">
+                <div class="util">
+                    <a href="#">로그인</a>
+                    <a href="#">회원가입</a>
+                    <a href="#">윤리경영</a>
+                    <a href="#">거래내역조회</a>
+                    <a href="#">고객센터</a>
+                    <select name="language" id="language">
+                        <option value="kor">KOR</option>
+                        <option value="eng">ENG</option>
+                    </select>
+                </div>
+
+                <div class="logo">
+                    <a href="index.html"><img src="image/logo.png" alt="광동제약"></a>
+                </div>
+
+                <div class="menu">
+                    <ul>
+                        <li class="introduce">회사소개<span></span></li>
+                        <li class="item"><a href="item_list.html">제품소개<span></span></a></li>
+                        <li class="ad"><a href="ad_list.html">홍보센터<span></span></a></li>
+                        <li class="company"><a href="company.html">인재채용<span></span></a></li>
+                    </ul>
+                    <div class="ismenu">
+                        <ul>
+                            <li><a href="introduce_ceo.html">CEO 소개</a></li>
+                            <li><a href="introduce_vision.html">VISION 2025</a></li>
+                            <li><a href="introduce_contact.html">오시는 길</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="visual vitem">
+            <div class="visual_in">
+                <h2>제품소개</h2>
+                <h3>광동제약의 제품을 소개합니다.</h3>
+            </div>
+        </div>
+
+        <section>
+            <div class="item_in">
+                <ul> 
+                    <li class="iselected">일반의약품<span></span></li>
+                    <li>의약외품<span></span></li>
+                    <li>약국용드링크<span></span></li>
+                    <li>일반유통식품<span></span></li>
+                    <span class="ihovers"></span>
+                </ul>
+                
+                <div class="alist">
+                    <!-- pagination top -->
+                    <div class="apagination pag clear">
+                        <a href="#">&lt;</a>
+                        <a href="#" class="aactive">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">7</a>
+                        <a href="#">8</a>
+                        <a href="#">9</a>
+                        <a href="#">10</a>
+                        <a href="#">&gt;</a>
+                    </div>
+                    <!-- filter -->
+                    <div class="afilter filterjs">
+                        <div class="afilter_in">
+                            <span class="material-icons">list</span>
+                            <span>카테고리 선택</span>
+                            <span></span>
+                        </div>
+                        <div class="afilter_list">
+                            <ul>
+                                <li>발한제, 지한제</li>   <li>안과용제</li>     <li>간장질환용제</li>
+                                <li>건위소화제</li>       <li>기생성 피부질환용제</li>     <li>단백아미노산제제</li>
+                                <li>대사성 의약품</li>    <li>무기질제제</li>   <li>비타민제</li>
+                                <li>소화기관용약</li>     <li>순환계용약</li>   <li>식욕촉진제</li>
+                                <li>외피용약</li>         <li>자양강장제</li>   <li>제산제</li>
+                                <li>진통&middot;진양&middot;수렴 소염제</li> <li>최면진정제</li>    <li>치과구강용제</li>
+                                <li>치질용제</li>         <li>파스류</li>       <li>피임제</li>
+                                <li>하제, 완장제</li>     <li>해열&middot;진통&middot;소염제</li>
+                                <li>기타의 중추신경용약</li>    <li>기타</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- item list -->
+                    <div class="aitem_list">
+                        <ul>
+                            <li> <!--item 1 row-->
+                                <ul class="irow">
+                                    <li>
+                                        <div class="alinfo">
+                                            <img src="image/aitem1.png" alt="item1">
+                                            <h2>광동 벤포파워액</h2>
+                                        </div>
+                                        <div class="aldetail">
+                                            <h2>광동 벤포파워액</h2>
+                                            <h3>일반의약품>비타민제</h3>
+                                            <div class="detail_btn">자세히 보기</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="alinfo">
+                                            <img src="image/aitem2.png" alt="item2">
+                                            <h2>광동경옥고</h2>
+                                        </div>
+                                        <div class="aldetail">
+                                            <h2>광동경옥고</h2>
+                                            <h3>일반의약품>자양강장제</h3>
+                                            <div class="detail_btn">자세히 보기</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="alinfo">
+                                            <img src="image/aitem3.png" alt="item3">
+                                            <h2>광동공진단</h2>
+                                        </div>
+                                        <div class="aldetail">
+                                            <h2>광동공진단</h2>
+                                            <h3>일반의약품>자양강장제</h3>
+                                            <div class="detail_btn">자세히 보기</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li> <!--item 2 row-->
+                                <ul class="irow">
+                                    <li>
+                                        <div class="alinfo">
+                                            <img src="image/aitem4.png" alt="item4">
+                                            <h2>광동금탕액(향갈탕)</h2>
+                                        </div>
+                                        <div class="aldetail">
+                                            <h2>광동금탕액(향갈탕)</h2>
+                                            <h3>일반의약품>해열진통소염제</h3>
+                                            <div class="detail_btn">자세히 보기</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="alinfo">
+                                            <img src="image/aitem5.png" alt="item5">
+                                            <h2>광동네모파스카타플라스마</h2>
+                                        </div>
+                                        <div class="aldetail">
+                                            <h2>광동네모파스카타<br>플라스마</h2>
+                                            <h3>일반의약품>진통진양수렴소염제</h3>
+                                            <div class="detail_btn">자세히 보기</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="alinfo">
+                                            <img src="image/aitem6.png" alt="item6">
+                                            <h2>광동리버샷액</h2>
+                                        </div>
+                                        <div class="aldetail">
+                                            <h2>광동리버샷액</h2>
+                                            <h3>일반의약품>자양강장제</h3>
+                                            <div class="detail_btn">자세히 보기</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li> <!--item 3 row-->
+                                <ul class="irow">
+                                    <li>
+                                        <div class="alinfo">
+                                            <img src="image/aitem7.png" alt="item7">
+                                            <h2>광동리버샷정</h2>
+                                        </div>
+                                        <div class="aldetail">
+                                            <h2>광동리버샷정</h2>
+                                            <h3>일반의약품>자양강장제</h3>
+                                            <div class="detail_btn">자세히 보기</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="alinfo">
+                                            <img src="image/aitem8.png" alt="item8">
+                                            <h2>광동만수고</h2>
+                                        </div>
+                                        <div class="aldetail">
+                                            <h2>광동만수고</h2>
+                                            <h3>일반의약품>파스류</h3>
+                                            <div class="detail_btn">자세히 보기</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="alinfo">
+                                            <img src="image/aitem9.png" alt="item9">
+                                            <h2>광동만수고골드플라스타</h2>
+                                        </div>
+                                        <div class="aldetail">
+                                            <h2>광동만수고골드<br>플라스타</h2>
+                                            <h3>일반의약품>파스류</h3>
+                                            <div class="detail_btn">자세히 보기</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- pagination bottom -->
+                    <div class="apagination pag clear">
+                        <a href="#">&lt;</a>
+                        <a href="#" class="aactive">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">7</a>
+                        <a href="#">8</a>
+                        <a href="#">9</a>
+                        <a href="#">10</a>
+                        <a href="#">&gt;</a>
+                    </div>
+                </div>
+                <div class="blist">
+                    <!-- pagination top -->
+                    <div class="bpagination pag clear">
+                        <a href="#">&lt;</a>
+                        <a href="#" class="bactive">1</a>
+                        <a href="#">2</a>
+                        <a href="#">&gt;</a>
+                    </div>
+                    <!-- filter -->
+                    <div class="bfilter filterjs">
+                        <div class="bfilter_in">
+                            <span class="material-icons">list</span>
+                            <span>카테고리 선택</span>
+                            <span></span>
+                        </div>
+                        <div class="bfilter_list">
+                            <ul>
+                                <li>의약외품</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- item list -->
+                    <div class="bitem_list">
+                        <ul>
+                            <li> <!--item 1 row-->
+                                <ul class="irow">
+                                    <li>
+                                        <div class="blinfo">
+                                            <img src="image/bitem1.png" alt="item1">
+                                            <h2>광동더마터치올커버스팟</h2>
+                                        </div>
+                                        <div class="bldetail">
+                                            <h2>광동더마터치<br>올커버스팟</h2>
+                                            <h3>의약외품>의약외품</h3>
+                                            <div class="detail_btn">자세히 보기</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="blinfo">
+                                            <img src="image/bitem2.png" alt="item2">
+                                            <h2>더마터치(1회용반창고)</h2>
+                                        </div>
+                                        <div class="bldetail">
+                                            <h2>더마터치<br>(1회용반창고)</h2>
+                                            <h3>의약외품>의약외품</h3>
+                                            <div class="detail_btn">자세히 보기</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="blinfo">
+                                            <img src="image/bitem3.png" alt="item3">
+                                            <h2>더마터치(1회용반창고) - 스팟</h2>
+                                        </div>
+                                        <div class="bldetail">
+                                            <h2>더마터치<br>(1회용반창고) - 스팟</h2>
+                                            <h3>의약외품>의약외품</h3>
+                                            <div class="detail_btn">자세히 보기</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li> <!--item 2 row-->
+                                <ul class="irow">
+                                    <li>
+                                        <div class="blinfo">
+                                            <img src="image/bitem4.png" alt="item4">
+                                            <h2>브이세븐액</h2>
+                                        </div>
+                                        <div class="bldetail">
+                                            <h2>브이세븐액</h2>
+                                            <h3>의약외품>의약외품</h3>
+                                            <div class="detail_btn">자세히 보기</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="blinfo">
+                                            <img src="image/bitem5.png" alt="item5">
+                                            <h2>생록천</h2>
+                                        </div>
+                                        <div class="bldetail">
+                                            <h2>생록천</h2>
+                                            <h3>의약외품>의약외품</h3>
+                                            <div class="detail_btn">자세히 보기</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="blinfo">
+                                            <img src="image/bitem6.png" alt="item6">
+                                            <h2>솔표 솔청수액</h2>
+                                        </div>
+                                        <div class="bldetail">
+                                            <h2>솔표 솔청수액</h2>
+                                            <h3>의약외품>의약외품</h3>
+                                            <div class="detail_btn">자세히 보기</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li> <!--item 3 row-->
+                                <ul class="irow">
+                                    <li>
+                                        <div class="blinfo">
+                                            <img src="image/bitem7.png" alt="item7">
+                                            <h2>솔표 위청수골드액</h2>
+                                        </div>
+                                        <div class="bldetail">
+                                            <h2>솔표 위청수골드액</h2>
+                                            <h3>의약외품>의약외품</h3>
+                                            <div class="detail_btn">자세히 보기</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="blinfo">
+                                            <img src="image/bitem8.png" alt="item8">
+                                            <h2>시린이치약&#39;센소다인 오리지날&#39;</h2>
+                                        </div>
+                                        <div class="bldetail">
+                                            <h2>시린이치약<br>&#39;센소다인 오리지날&#39;</h2>
+                                            <h3>의약외품>의약외품</h3>
+                                            <div class="detail_btn">자세히 보기</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="blinfo">
+                                            <img src="image/bitem9.png" alt="item9">
+                                            <h2>시린이치약&#39;센소다인 후레쉬 민트&#39;</h2>
+                                        </div>
+                                        <div class="bldetail">
+                                            <h2>시린이치약&#39;센소다인 <br>후레쉬 민트&#39;</h2>
+                                            <h3>의약외품>의약외품</h3>
+                                            <div class="detail_btn">자세히 보기</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- pagination bottom -->
+                    <div class="bpagination pag clear">
+                        <a href="#">&lt;</a>
+                        <a href="#" class="bactive">1</a>
+                        <a href="#">2</a>
+                        <a href="#">&gt;</a>
+                    </div>
+                </div>
+                <div class="clist">
+                    <!-- pagination top -->
+                    <div class="cpagination pag clear">
+                        <a href="#">&lt;</a>
+                        <a href="#" class="cactive">1</a>
+                        <a href="#">2</a>
+                        <a href="#">&gt;</a>
+                    </div>
+                    <!-- filter -->
+                    <div class="cfilter filterjs">
+                        <div class="cfilter_in">
+                            <span class="material-icons">list</span>
+                            <span>카테고리 선택</span>
+                            <span></span>
+                        </div>
+                        <div class="cfilter_list">
+                            <ul>
+                                <li>건강기능식품</li>   <li>드링크류</li>     <li>쌍화류</li>
+                                <li>기타음료</li>       <li>홍삼류</li>     <li>홍삼음료</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- item list -->
+                    <div class="citem_list">
+                        <ul>
+                            <li> <!--item 1 row-->
+                                <ul class="irow">
+                                    <li>
+                                        <div class="clinfo">
+                                            <img src="image/citem1.png" alt="item1">
+                                            <h2>가네스알파</h2>
+                                        </div>
+                                        <div class="cldetail">
+                                            <h2>가네스알파</h2>
+                                            <h3>약국용드링크>드링크류</h3>
+                                            <div class="detail_btn">자세히 보기</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="clinfo">
+                                            <img src="image/citem2.png" alt="item2">
+                                            <h2>광동 복분자</h2>
+                                        </div>
+                                        <div class="cldetail">
+                                            <h2>광동 복분자</h2>
+                                            <h3>약국용드링크>드링크류</h3>
+                                            <div class="detail_btn">자세히 보기</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="clinfo">
+                                            <img src="image/citem3.png" alt="item3">
+                                            <h2>광동 생강쌍화</h2>
+                                        </div>
+                                        <div class="cldetail">
+                                            <h2>광동 생강쌍화</h2>
+                                            <h3>약국용드링크>쌍화류</h3>
+                                            <div class="detail_btn">자세히 보기</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li> <!--item 2 row-->
+                                <ul class="irow">
+                                    <li>
+                                        <div class="clinfo">
+                                            <img src="image/citem4.png" alt="item4">
+                                            <h2>광동 알지3-이엑스(RG3-EX)</h2>
+                                        </div>
+                                        <div class="cldetail">
+                                            <h2>광동 알지3-이엑스(RG3-EX)</h2>
+                                            <h3>약국용드링크>건강기능식품</h3>
+                                            <div class="detail_btn">자세히 보기</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="clinfo">
+                                            <img src="image/citem5.png" alt="item5">
+                                            <h2>광동 위생천</h2>
+                                        </div>
+                                        <div class="cldetail">
+                                            <h2>광동 위생천</h2>
+                                            <h3>약국용드링크>기타음료</h3>
+                                            <div class="detail_btn">자세히 보기</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="clinfo">
+                                            <img src="image/citem6.png" alt="item6">
+                                            <h2>광동 眞홍삼골드</h2>
+                                        </div>
+                                        <div class="cldetail">
+                                            <h2>광동 眞홍삼골드</h2>
+                                            <h3>약국용드링크>홍삼음료</h3>
+                                            <div class="detail_btn">자세히 보기</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li> <!--item 3 row-->
+                                <ul class="irow">
+                                    <li>
+                                        <div class="clinfo">
+                                            <img src="image/citem7.png" alt="item7">
+                                            <h2>광동발효홍삼진액</h2>
+                                        </div>
+                                        <div class="cldetail">
+                                            <h2>광동발효홍삼진액</h2>
+                                            <h3>약국용드링크>건강기능식품</h3>
+                                            <div class="detail_btn">자세히 보기</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="clinfo">
+                                            <img src="image/citem8.png" alt="item8">
+                                            <h2>광동쌍화</h2>
+                                        </div>
+                                        <div class="cldetail">
+                                            <h2>광동쌍화</h2>
+                                            <h3>약국용드링크>쌍화류</h3>
+                                            <div class="detail_btn">자세히 보기</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="clinfo">
+                                            <img src="image/citem9.png" alt="item9">
+                                            <h2>광동홍삼진</h2>
+                                        </div>
+                                        <div class="cldetail">
+                                            <h2>광동홍삼진</h2>
+                                            <h3>약국용드링크>홍삼음료</h3>
+                                            <div class="detail_btn">자세히 보기</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- pagination bottom -->
+                    <div class="cpagination pag clear">
+                        <a href="#">&lt;</a>
+                        <a href="#" class="cactive">1</a>
+                        <a href="#">2</a>
+                        <a href="#">&gt;</a>
+                    </div>
+                </div>
+                <div class="dlist">
+                    <!-- pagination top -->
+                    <div class="dpagination pag clear">
+                        <a href="#">&lt;</a>
+                        <a href="#" class="dactive">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">&gt;</a>
+                    </div>
+                    <!-- filter -->
+                    <div class="dfilter filterjs">
+                        <div class="dfilter_in">
+                            <span class="material-icons">list</span>
+                            <span>카테고리 선택</span>
+                            <span></span>
+                        </div>
+                        <div class="dfilter_list">
+                            <ul>
+                                <li>먹는샘물</li>       <li>과채음료</li>     <li>두유류</li>
+                                <li>드링크류</li>       <li>미용음료</li>     <li>비타500류</li>
+                                <li>선물세트</li>       <li>숙취해소음료</li>   <li>쌍화류</li>
+                                <li>먹는해양심층수</li> <li>이온음료</li>       <li>인삼류</li>
+                                <li>차음료</li>         <li>추출음료</li>       <li>커피</li>
+                                <li>탄산음료</li>       <li>혼합음료</li>       <li>인삼&middot;홍삼음료</li>
+                                <li>기타</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- item list -->
+                    <div class="ditem_list">
+                        <ul>
+                            <li> <!--item 1 row-->
+                                <ul class="irow">
+                                    <li>
+                                        <div class="dlinfo">
+                                            <img src="image/ditem1.png" alt="item1">
+                                            <h2>광동 7세븐슬림호박</h2>
+                                        </div>
+                                        <div class="dldetail">
+                                            <h2>광동 7세븐슬림호박</h2>
+                                            <h3>일반유통식품>혼합음료</h3>
+                                            <div class="detail_btn">자세히 보기</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dlinfo">
+                                            <img src="image/ditem2.png" alt="item2">
+                                            <h2>광동 경옥진</h2>
+                                        </div>
+                                        <div class="dldetail">
+                                            <h2>광동 경옥진</h2>
+                                            <h3>일반유통식품>인삼&middot;홍삼음료</h3>
+                                            <div class="detail_btn">자세히 보기</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dlinfo">
+                                            <img src="image/ditem3.png" alt="item3">
+                                            <h2>광동 꿀담은 헛개</h2>
+                                        </div>
+                                        <div class="dldetail">
+                                            <h2>광동 꿀담은 헛개</h2>
+                                            <h3>일반유통식품>혼합음료</h3>
+                                            <div class="detail_btn">자세히 보기</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li> <!--item 2 row-->
+                                <ul class="irow">
+                                    <li>
+                                        <div class="dlinfo">
+                                            <img src="image/ditem4.png" alt="item4">
+                                            <h2>광동 대추쌍화</h2>
+                                        </div>
+                                        <div class="dldetail">
+                                            <h2>광동 대추쌍화</h2>
+                                            <h3>일반유통식품>쌍화류</h3>
+                                            <div class="detail_btn">자세히 보기</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dlinfo">
+                                            <img src="image/ditem5.png" alt="item5">
+                                            <h2>광동 도라지꿀배</h2>
+                                        </div>
+                                        <div class="dldetail">
+                                            <h2>광동 도라지꿀배</h2>
+                                            <h3>일반유통식품>혼합음료</h3>
+                                            <div class="detail_btn">자세히 보기</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dlinfo">
+                                            <img src="image/ditem6.png" alt="item6">
+                                            <h2>광동 돼지감자차</h2>
+                                        </div>
+                                        <div class="dldetail">
+                                            <h2>광동 돼지감자차</h2>
+                                            <h3>일반유통식품>차음료</h3>
+                                            <div class="detail_btn">자세히 보기</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li> <!--item 3 row-->
+                                <ul class="irow">
+                                    <li>
+                                        <div class="dlinfo">
+                                            <img src="image/ditem7.png" alt="item7">
+                                            <h2>광동 발효홍삼골드</h2>
+                                        </div>
+                                        <div class="dldetail">
+                                            <h2>광동 발효홍삼골드</h2>
+                                            <h3>일반유통식품>인삼&middot;홍삼음료</h3>
+                                            <div class="detail_btn">자세히 보기</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dlinfo">
+                                            <img src="image/ditem8.png" alt="item8">
+                                            <h2>광동 복분자</h2>
+                                        </div>
+                                        <div class="dldetail">
+                                            <h2>광동 복분자</h2>
+                                            <h3>일반유통식품>혼합음료</h3>
+                                            <div class="detail_btn">자세히 보기</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dlinfo">
+                                            <img src="image/ditem9.png" alt="item9">
+                                            <h2>광동 쌍화골드</h2>
+                                        </div>
+                                        <div class="dldetail">
+                                            <h2>광동 쌍화골드</h2>
+                                            <h3>일반유통식품>쌍화류</h3>
+                                            <div class="detail_btn">자세히 보기</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- pagination bottom -->
+                    <div class="dpagination pag clear">
+                        <a href="#">&lt;</a>
+                        <a href="#" class="dactive">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">&gt;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="fupdown">
+                <div class="fbtn">메 뉴 열 기</div>
+            </div>
+            <div class="footer">
+                <div class="fpriv">
+                    <div class="fpriv_in">
+                        <ul class="clear">
+                            <li><a href="http://www.ekdp.com/cscenter/pop_policy3.html?date=1214">개인정보처리방침</a></li>
+                            <li><a href="http://www.ekdp.com/cscenter/pop_policy2.html">회원이용약관</a></li>
+                            <li><a href="http://www.ekdp.com/cscenter/pop_policy1.html">이메일무단수집 거부</a></li>
+                            <li><a href="http://www.ekdp.com/bid/introduce_bid.asp">공개입찰</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flink">
+                    <div class="flink_in clear">
+                        <div class="fsns clear">
+                            <h5>광동제약 SNS</h5>
+                            <ul>
+                                <li>
+                                    <a href="http://www.facebook.com/kwangdong4U" target="_blank"><img src="image/sns_icon1.png" alt="광동제약 페이스북"></a>
+                                    <span class="bubble1">광동제약<br>페이스북</span><span class="tri1"></span>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/user/Kwangdong" target="_blank"><img src="image/sns_icon2.png" alt="광동제약 유튜브"></a>
+                                    <span class="bubble2">광동제약<br>유튜브</span><span class="tri2"></span>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/kwangdong_official/" target="_blank"><img src="image/sns_icon3.png" alt="광동제약 인스타그램"></a>
+                                    <span class="bubble3">광동제약<br>인스타그램</span><span class="tri3"></span>
+                                </li>
+                                <li>
+                                    <a href="http://tv.naver.com/kwangdong" target="_blank"><img src="image/sns_icon4.png" alt="광동제약 네이버TV"></a>
+                                    <span class="bubble4">광동제약<br>네이버TV</span><span class="tri4"></span>
+                                </li>
+                                <li>
+                                    <a href="https://post.naver.com/kwangdongcr" target="_blank"><img src="image/sns_icon5.png" alt="광동제약 네이버 포스트"></a>
+                                    <span class="bubble5">광동제약<br>네이버 포스트</span><span class="tri5"></span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ffamily clear">
+                            <h5>패밀리 사이트</h5>
+                            <a href="http://www.ekwangdong.co.kr/" target="_blank">광동한방병원</a>
+                            <a href="http://www.sfunbox.com/index.html" target="_blank">광동스펀몰</a>
+                            <a href="https://www.koreab2b.com/" target="_blank">코리아이플랫폼</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_in">
+                    <img src="image/logo_gray.png" alt="광동제약">
+                    <address>
+                        <p>서울 서초구 서초중앙로 85 가산빌딩 T 02-6006-7777</p>
+                        <p>COPYRIGHT&copy; KWANG DONG PHARMACEUTICAL CO., LTD. ALL RIGHTS RESERVED</p>
+                    </address>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Script Source -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="js/item.js"></script>
+    <script src="js/sheader.js"></script>
+    <script src="js/footer.js"></script>
+</body>
+</html>

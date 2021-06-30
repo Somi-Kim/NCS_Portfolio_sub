@@ -1,0 +1,251 @@
+footer {
+    position: relative;
+}
+
+.fupdown {
+    position: relative;
+    width: 1000px;
+    height: 0px;
+    margin: 0 auto;
+}
+.fbtn {
+    box-sizing: border-box;
+    position: absolute;
+    top: -24px;
+    left: 450px;
+    width: 100px;
+    height: 25px;
+    font-size: 8px;
+    line-height: 38px;
+    color: #ccc;
+    text-align: center;
+    border-bottom: 16px solid #333;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    cursor: pointer;
+}
+
+.footer {
+    width: 100%;
+    color: #ccc;
+    background: #333;
+}
+
+/* privacy */
+.fpriv, .flink {
+    display: none;
+}
+
+.fpriv { 
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px dashed #666;
+}
+.fpriv_in {
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+}
+.fpriv_in ul {width: 880px; height: 100%; margin: 0 auto;}
+.fpriv_in ul li {
+    float: left;
+    width: 200px;
+    text-align: center;
+    margin: 20px 10px;
+}
+.fpriv_in ul li a:hover {color: #fff;}
+
+
+.flink {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #666;
+}
+.flink_in {
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+}
+.fsns {
+    float: left;
+    width: 500px;
+}
+.fsns h5 {
+    float: left;
+    height: 18px;
+    border-right: 2px solid #666;
+    padding-right: 15px;
+    margin: 10px 0 0 45px;
+}
+.fsns ul li {
+    position: relative;
+    float: left;
+    margin: 5px 0 0 30px;
+}
+.fsns ul li img {
+    width: 30px;
+    height: 30px;
+}
+    /* 말풍선 */
+.bubble1 {
+    display: none;
+    position: absolute;
+    left: -20px;
+    top: -50px;
+    width: 70px;
+    height: 35px;
+    font-size: 12px;
+    text-align: center;
+    color: #333;
+    border-radius: 5px;
+    background: #fff;
+    padding-top: 5px;
+}
+.tri1 {
+    display: none;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid #fff;
+}
+.bubble2 {
+    display: none;
+    position: absolute;
+    left: -20px;
+    top: -50px;
+    width: 70px;
+    height: 35px;
+    font-size: 12px;
+    text-align: center;
+    color: #333;
+    border-radius: 5px;
+    background: #fff;
+    padding-top: 5px;
+}
+.tri2 {
+    display: none;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid #fff;
+}
+.bubble3 {
+    display: none;
+    position: absolute;
+    left: -20px;
+    top: -50px;
+    width: 70px;
+    height: 35px;
+    font-size: 12px;
+    text-align: center;
+    color: #333;
+    border-radius: 5px;
+    background: #fff;
+    padding-top: 5px;
+}
+.tri3 {
+    display: none;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid #fff;
+}
+.bubble4 {
+    display: none;
+    position: absolute;
+    left: -20px;
+    top: -50px;
+    width: 70px;
+    height: 35px;
+    font-size: 12px;
+    text-align: center;
+    color: #333;
+    border-radius: 5px;
+    background: #fff;
+    padding-top: 5px;
+}
+.tri4 {
+    display: none;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid #fff;
+}
+.bubble5 {
+    display: none;
+    position: absolute;
+    left: -25px;
+    top: -50px;
+    width: 80px;
+    height: 35px;
+    font-size: 12px;
+    text-align: center;
+    color: #333;
+    border-radius: 5px;
+    background: #fff;
+    padding-top: 5px;
+}
+.tri5 {
+    display: none;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid #fff;
+}
+
+.ffamily {
+    float: left;
+    width: 500px;
+}
+.ffamily h5 {
+    float: left;
+    height: 18px;
+    border-right: 2px solid #666;
+    padding-right: 15px;
+    margin: 10px 0 0 50px;
+}
+.ffamily a {
+    display: inline-block;
+    margin: 10px 0 0 15px;
+}
+.ffamily a:hover {color: #fff;}
+
+
+/* logo */
+.footer_in {
+    clear: both;
+    width: 1000px;
+    height: 100px;
+    margin: 0 auto;
+}
+.footer_in img {
+    float: left;
+    margin: 30px 0 0 30px;
+}
+address {
+    float: left;
+    color: #666;
+    font-style: normal;
+    line-height: 18px;
+    margin: 33px 0 0 30px;
+}

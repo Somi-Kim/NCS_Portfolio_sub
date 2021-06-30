@@ -1,0 +1,592 @@
+@import url(common.css);
+
+
+/*______________________________________________ PC */
+/*                 header                */
+header {
+    width: 100%;
+    height: 120px;
+    background: #f58220;
+}
+.header_in {
+    position: relative;
+	width: 100%;
+    height: 120px;
+	max-width: 1200px;
+    margin: 0 auto;
+}
+
+    /* sub util */
+.sutil {
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    width: 60%;
+    height: 30px;
+    color: #f0b26b;
+}
+.sutil>a {margin-left: 3%;}
+  
+    /* main util */
+.mutil {
+    position: absolute;
+    top: 7%;
+    right: 3%;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    background: #f0b26b;
+}
+.mutil>a {
+    display: inline-block;
+    color: #fff;
+    width: 31.5%;
+}
+.mutil>a:not(:nth-child(3)) {border-right: 1px dashed #f58220;}
+    
+    /* logo */
+.logo {
+    position: absolute;
+    left: 30px;
+    bottom: 20px;
+}
+
+    /* mobile toggle menu 숨기기(pc, tablet) */
+.mobile_toggle {display: none;}
+
+    /* main menu */
+.menu {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    width: 70%;
+    text-align: right;
+}
+.menu>a {
+    font-size: 16px;
+    color: #fff;
+    padding: 5px;
+    margin-left: 3%;
+    transition: all 0.5s;
+}
+.menu>a:hover {
+    color: #f58220;
+    border-radius: 10px;
+    background: #fff;
+}
+
+
+/*                 visual                */
+.visual {
+	width: 100%;
+    /* height: 500px; */
+	max-width: 1200px;
+    background: white;
+    margin: 0 auto;
+}
+.visual>ul>li:not(:first-child) {display: none;}
+.visual img {width: 100%;}
+
+
+/*                 section                */
+section {
+	width: 100%;
+	max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+    /* frequently menu */
+.freq {
+    float: left;
+    width: 50%;
+    height: 350px;
+    text-align: center;
+    background: #84888b;
+}
+.freq a {
+    float: left;
+    width: 24.6%;
+    height: 50%;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    margin-left: 6.5%;
+    transition: all 0.3s;
+}
+.freq a:hover {color: #f58220;}
+.freq a:hover img {filter: brightness(100.0);}
+.freq a:hover .icon_container {background-color: #f58220;}
+.freq img {width: 60%; margin: 20px auto;}
+
+
+.icon_container {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: white;
+    margin: 15px auto 10px;
+    transition: all 0.3s;
+}
+
+    /* menu for newcomer  */
+.newco {
+    float: left;
+    width: 50%;
+    height: 350px;
+    text-align: center;
+    background: #a0a6a8;
+}
+.newco a {
+    float: left;
+    width: 24.6%;
+    height: 50%;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    margin-left: 6.5%;
+    transition: all 0.3s;
+}
+.newco a:hover {color: #043b72;}
+.newco a:hover img {filter: brightness(100.0);}
+.newco a:hover .icon_container {background-color: #043b72;}
+.newco img {width: 60%; margin: 20px auto;}
+
+    /* useful services */
+.service {
+    float: left;
+    width: 67%;
+    height: 300px;
+    background: #043b72;
+}
+.service>a {
+    float: left;
+    width: 20%;
+    height: 50%;
+    text-align: center;
+    margin-left: 4%;
+}
+.service img {
+    height: 50%;
+    margin: 15% 0 10px;
+    transition: all 0.3s;
+}
+.service>a:hover>img {
+    height: 40%;
+    border-radius: 50%;
+    border: 3px solid #f58220;
+    padding: 5%;
+}
+.service p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    transition: all 0.3s;
+}
+.service>a:hover>p {color: #f58220;}
+
+    /* service & app guide */
+.guide {
+    box-sizing: border-box;
+    float: left;
+    width: 33%;
+    height: 300px;
+    border-right: 1px solid #ccc;
+    overflow: hidden;
+}
+.guide>div {height: 33.3%; border-bottom: 1px solid #eee;}
+.guide>div>img {
+    width: 20%;
+    margin: 40px 15px;
+}
+.guide a {
+    font-weight: 600;
+    line-height: 100px;
+    margin: 0 5%;
+}
+.guide a:hover {text-decoration: underline;}
+.guide span {font-size: 10px; color: #f58220;}
+.guide a:hover span {color: #043b72;}
+
+
+    /* notice board */
+.notice {
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+    height: 350px;
+    border-left: 1px solid #ccc;
+    background: #fff;
+    overflow: hidden;
+}
+.notice a:hover {text-decoration: underline;}
+.notice>h2, .notice>p {height: 25%;}
+.notice>h2 {
+    position: relative;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 600;
+    text-indent: 20px;
+    line-height: 88px;
+    border-bottom: 1px solid #ccc;
+}
+.notice>h2>a {
+    position: absolute;
+    right: 5%;
+    font-size: 14px;
+    font-weight: 300;
+}
+.notice>p {line-height: 88px; border-bottom: 1px solid #eee;}
+.notice>p>a {
+    display: inline-block;
+    width: 67%;
+    text-align: left;
+    margin-left: 3%;
+}
+.notice>p>span {
+    display: inline-block; 
+    width: 27%; 
+    text-align: right;
+    margin-right: 3%;
+}
+
+    /* more tip :: only for PC */
+.moretip {
+    float: left;
+    width: 50%; /* 600px */
+    height: 350px;
+}
+.moretip>a {display: inline-block; width: 100%; height: 100%;}
+
+
+/*                 footer                */
+footer {
+    width: 100%;
+    /* height: 250px; */
+    background: #48535b;
+}
+
+.footer_in {
+	width: 100%;
+	max-width: 1200px;
+    margin: 0 auto;
+}
+.flogo {
+    float: left;
+    width: 15%;
+    height: 100%;
+}
+.flogo>img {width: 90%; margin: 10% 5%;}
+.ftext {
+    float: left;
+    width: 82%;
+    text-align: left;
+    color: #fff;
+    margin: 3% 0 0 3%;
+}
+
+.ftel {float: left; width: 85%;}
+.ftel>ul>li {float: left; margin-right: 2%;}
+
+.fsns {float: left; width: 15%; margin-bottom: 3%;}
+.fsns>ul>li {float: left; margin-right: 10%;}
+
+.fcompany {clear: both; width: 100%; margin-bottom: 3%;}
+.fcompany>ul>li {float: left; margin-right: 2%;}
+.fcompany>ul>li>a:hover {text-decoration: underline;}
+
+.fpolicy {width: 100%; margin-bottom: 3%;}
+.fpolicy>ul>li {float: left; margin-right: 2%;}
+.fpolicy>ul>li>a:hover {text-decoration: underline;}
+
+.fcopy {
+    width: 100%;
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 3%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*______________________________________________ Tablet */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+    /*                 header                */
+    header {width:100%; max-width:100%;}
+
+    .sutil {display: none;}
+    .mutil {right: 3%;}
+
+    /* main menu */
+    .menu {margin: 7% 0% 0% 5%;}
+    .menu>a {font-size: 14px; letter-spacing: -2px; margin-left: 1%;}
+
+
+    /*                 visual                */
+    .visual>ul>li:nth-of-type(2) {display: block;}
+    .visual>ul>li:not(:nth-of-type(2)) {display: none;}
+    .visual img {width: 100%;}
+
+    /*                 section                */
+    section {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+        /* frequently menu */
+    .freq {
+        float: left;
+        width: 100%;
+        height: 175px;
+    }
+    .freq a {
+        float: left;
+        width: 11.5%;
+        font-size: 15px;
+        margin-left: 4.3%;
+    }
+    .freq a:nth-child(4) {word-spacing: 70px;} /* 텍스트 두줄로 넘기기 위함 */
+
+    
+    .icon_container {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        background: white;
+        margin: 15px auto 7px;
+    }
+
+        /* menu for newcomer  */
+    .newco {
+        float: left;
+        width: 100%;
+        height: 175px;
+    }
+    .newco a {
+        float: left;
+        width: 11.5%;
+        font-size: 15px;
+        margin-left: 4.3%;
+    }
+
+        /* useful services */
+    .service {
+        float: left;
+        width: 100%;
+        height: 300px;
+    }
+    .service img {margin: 10% 0 7px;}
+    
+        /* service & app guide */
+    .guide {
+        float: left;
+        width: 50%;
+        height: 350px;
+        border-right: 1px solid #ccc;
+    }
+    
+        /* notice board */
+    .notice {
+        float: left;
+        width: 50%;
+        height: 350px;
+    }
+    
+        /* more tip :: only for PC */
+    .moretip {display: none;}
+
+
+
+    /*                 footer                */
+    footer {font-size: 12px;}
+
+    .fcompany {display: none;}
+    .ftel {letter-spacing: -1px;}
+    
+    .fcompany>ul>li, .fpolicy>ul>li {letter-spacing: -1px; margin-right: 1.5%;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*______________________________________________ Mobile */
+@media screen and (max-width: 767px) {
+
+    /*                 header                */
+    header {width:100%; text-align: center; max-width:100%;}
+    .header_in {position: static;}
+    .sutil {display: none;}
+    
+    .mutil {
+        position: absolute;
+        top: 100px;
+        right: -100%;
+        width: 100%;
+        max-width: 400px;
+        height: 30px;
+        line-height: 30px;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        border-radius: 0;
+        background: #fff;
+        padding: 10px 0;
+        transition: all 0.3s;
+        z-index: 999;
+    }
+    .mutil.menu_opened {right: 0%;}
+    .mutil>a {
+        width: 30%;
+        height: 100%;
+        color: #333;
+        padding: 0;   
+    }
+
+    .logo {left: 0; top: 30px; width: 100%; height: 60px; text-align: center;}
+    .mobile_toggle { /* mobile menu */
+        display: block;
+        position: absolute;
+        right: 30px;
+        top: 50px;
+        width: 35px;
+        height: 30px;
+        cursor: pointer;
+        z-index: 999;
+    }
+    .mobile_toggle>span {
+        display: block;
+        width: 35px;
+        height: 4px;
+        border-radius: 2px;
+        background: white;
+        margin-bottom: 8px;
+        transition: all 0.3s;
+    }
+    .mobile_toggle>span.menu_opened {background: #f58220;}
+    .mobile_toggle>span:nth-of-type(1) {transform-origin: top left;}
+    .mobile_toggle>span:nth-of-type(1).menu_opened {transform: rotate(45deg);}
+    .mobile_toggle>span:nth-of-type(2).menu_opened {opacity: 0;}
+    .mobile_toggle>span:nth-of-type(3) {transform-origin: bottom left;}
+    .mobile_toggle>span:nth-of-type(3).menu_opened {transform: rotate(-45deg);}
+    .menu {
+        position: absolute;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        max-width: 400px;
+        height: 100%;
+        background: white;
+        padding-top: 150px;
+        transition: all 0.3s;
+    }
+    .menu.menu_opened {right: 0%;}
+    .menu>a {
+        display: block;
+        width: 100%;
+        height: 50px;
+        color: #333;
+        text-align: center;
+        line-height: 50px;
+        border-bottom: 1px solid #999;
+        padding: 0;
+        margin: 0;
+    }
+    .menu>a:first-of-type {border-top: 1px solid #999;}
+    .menu>a:hover {
+        color: #fff;
+        border-radius: 0;
+        background: #f58220;
+    }
+
+    /*                 section                */
+    section {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+        /* frequently menu */
+    .freq {
+        width: 100%;
+        height: 250px;
+    }
+    .freq a {font-size: 12px;}
+    .freq a:nth-child(4) {word-spacing: 200px;} /* 텍스트 두줄로 넘기기 위함 */
+    .freq img {width: 60%; margin: 15px auto;}
+    
+    .icon_container {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: white;
+        margin: 10px auto 5px;
+    }
+
+        /* menu for newcomer  */
+    .newco {width: 100%; height: 250px;}
+    .newco a {font-size: 12px;}
+    .newco img {width: 60%; margin: 15px auto;}
+
+        /* useful services */
+    .service {width: 100%; height: 250px;}
+    .service>a {width: 28%; height: 30%;}
+    .service img {height: 50%; margin: 15px 0;}
+    .service>a>p {font-size: 12px;}
+    
+        /* service & app guide */
+    .guide {
+        width: 100%;
+        height: 300px;
+        border-bottom: 1px solid #ccc;
+    }
+    .guide a {margin: 0 3%;}
+
+        /* notice board */
+    .notice {width: 100%; height: 300px;}
+    .notice>p>a {width: 100%;}
+    .notice>p>span {display: none;}
+    
+        /* more tip :: only for PC */
+    .moretip {display: none;}
+
+
+
+    /*                 footer                */
+    .flogo {clear: both; width: 100%; text-align: center;}
+    .flogo>img {width: 50%; margin: 5%;}
+
+    .ftext {width: 100%; margin: 0;}
+
+    .ftel, .fcompany, .fpolicy {display: none;}
+
+    .fsns {clear: both; width: 100%; text-align: center;}
+    .fsns>ul>li {width: 33.3%; margin: 0 0 3% 0;}
+
+    .fcopy {font-size: 10px; letter-spacing: -1px; text-align: center;}
+}

@@ -1,0 +1,795 @@
+@import url(common.css);
+/* 나눔스퀘어 */
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
+body {
+    font-family: 'NanumSquare', sans-serif;
+    font-weight: 500;
+}
+
+/* <============================== top button */
+#top_btn {
+    /* 위치 설정에 사용 */
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    margin: 30px;
+    border-radius: 50%;
+    box-shadow: #999 3px 3px 5px;
+}
+#top_btn .active { 
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: url(../image/top_btn.png) no-repeat;
+    transition: all 0.3s;
+}
+#top_btn .active:hover {
+    background: url(../image/top_btn_on.png) no-repeat;
+}
+
+
+
+/* <============================== Header */
+header {width: 100%;}
+.header_in {}
+.top_content {
+    width: 1000px;
+    height: 150px;
+    margin: 0 auto;;
+}
+
+    /* user bar */
+.user_bar {height: 50px; position: relative; display: block;}
+.user_bar>span, .user_bar>h6 {
+    position: absolute;
+    top: 10px;
+    font-size: 12px;
+}
+    /* 1:검색창 */
+.user_bar>span:nth-child(1) {
+    top: 7px;
+    right: 175px;
+}
+.user_bar>span:nth-child(1)>input {
+    height: 20px;
+    border: #00cccb 1px solid;
+    border-radius: 3px;
+}
+    /* 2:검색버튼 */
+.user_bar>span:nth-child(2) {
+    top: 7px;
+    right: 140px;
+    border: #00cccb 1px solid;
+}
+.user_bar>span:nth-child(2)>input {
+    color: #00cccb;
+    font-family: 'NanumSquare', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    border: none;
+    border-radius: 3px;
+    background: #fff;
+    padding: 3px;
+    cursor: pointer;
+}
+    /* 3:로그인, 4:회원가입 */
+.user_bar>h6:nth-child(3) {right: 70px;}
+.user_bar>h6:nth-child(3)>a:hover {color:#00cccb;}
+.user_bar>h6:nth-child(4) {right: 0;}
+.user_bar>h6:nth-child(4)>a:hover {color:#00cccb;}
+.user_bar>h6>a {font-weight: 300;}
+
+    /* logo image */
+.left_logo a img {
+    float: left;
+    width: 100px;
+    margin-top: 28px;
+}
+
+    /* main menu */
+nav {
+    float: right;
+}
+nav ul li {
+    float: left;width: 130px;
+    height: 100px;
+    font-size: 16px;
+    letter-spacing: -2px;
+    text-align: center;
+}
+nav ul li:first-child {padding-right: 30px;}
+nav ul li:last-child {font-weight: 700;}
+nav ul li a {
+    width: 100%;
+    height: 60px;
+    padding-top: 40px;
+    display: inline-block;
+}
+nav ul li:not(.open_menu):hover a{
+    color: #00cccb;
+}
+    /* 오픈하기 메뉴 */
+nav ul li.open_menu {
+    color: white;
+    background: #00cccb;
+    transition: all 0.3s;
+}
+nav ul li.open_menu:hover {
+    background: white;
+    box-sizing: border-box;
+    color: #00cccb;
+}
+
+    /* 메인 메뉴 아래 비쥬얼 */
+.main {
+    width: inherit;
+    height: 500px;
+    background: url(../image/main_visual.jpg) no-repeat center center;
+    background-size: cover;
+    
+    position: relative;
+    text-shadow: #333 0px 0px 10px;
+}
+.main_h {width: inherit; height: inherit;}
+.main_h>a {display: block; width: inherit; height: inherit;}
+
+    /* main visual banner location */
+.main_loc {
+    position: absolute;
+    left: 47%;
+    top: 10px;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+.main_loc a {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    box-shadow: #333 0px 0px 3px;
+}
+.main_loc a:first-child {background: rgba(255, 255, 255, 1.0);}
+.main_loc a:not(first-child) {background: rgba(255, 255, 255, 0.5);}
+.main_loc a:not(first-child):hover {background: rgba(255, 255, 255, 1.0);}
+
+    /* main visual left/right control button */
+.main_left {
+    position: absolute;
+    height: inherit;
+    top: 210px;
+    left: 15%;
+}
+.main_left a {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 500;
+    font-size: 70px;
+}
+.main_left a:hover {color: rgba(255, 255, 255, 1.0);}
+.main_right {
+    position: absolute;
+    height: inherit;
+    top: 210px;
+    right: 15%;
+}
+.main_right a {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 500;
+    font-size: 70px;
+}
+.main_right a:hover {color: rgba(255, 255, 255, 1.0);}
+
+    /* main visual title */
+.main>span {
+    position: absolute;
+    bottom: 30px;
+    right: 17%;
+    cursor: pointer;
+}
+.main>span>span {
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+.main>span>span:first-child {font-size: 14px;}
+.main>span>span:last-child {font-size: 50px; margin-top: 10px;}
+.main:hover>span>span {text-shadow: #ccc 0px 0px 5px;}
+
+
+/* <============================== Section */
+section {
+    width: 100%;
+    text-align: center;
+}
+
+    /* ---------------------------------------- 이 프로젝트 어때요? */
+#how_about {
+    width: 1000px;
+    margin: 0 auto 30px;   
+}
+#how_about h2 {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 900;
+    padding: 5px;
+    margin: 50px 0 20px;
+    transition: all 0.3s;
+}
+#how_about:hover h2 {
+    color: #fff;
+    background: #00cccb;
+}
+    /* 어때요 프로젝트 박스 */
+.how_box {
+    float: left;
+    width: 245px;
+    height: 215px;
+    padding: 20px;
+    margin: 30px 0 30px 30px;
+    background: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: #ccc 0 3px 10px;
+    transition: all 0.3s;
+}
+.how_box:hover {
+    width: 250px;
+    height: 220px;
+    margin: 25px 0 25px 40px;
+    box-shadow: #999 0 5px 20px;
+}
+
+    /* 어때요 박스 내용 */
+.how_img img {
+    width: 220px;
+    height: 130px;
+    margin: 10px auto 10px;
+    background: #666;
+    transition: all 0.3s;
+}
+.how_box:hover .how_img img {
+    width: 225px;
+    height: 135px;
+}
+.how_title {width: 240px; text-align: left; margin-bottom: 10px;}
+.how_progress {}
+.how_progress h6 {text-align: left; margin-bottom: 5px;}
+.how_progress h6 span {color: #00cccb; font-weight: 900;}
+.how_bar_base {
+    width: 240px;
+    height: 10px;
+    margin: 0 auto;
+    border-radius: 5px;
+    background: #eee;
+}
+    /*                  1 */
+.how_box .how_bar1 {
+    width: 0;
+    height: 10px;
+    border-radius: 5px;
+    background: #00cccb;
+    transition: all 0.5s;
+}
+.how_box:hover .how_bar1 {
+    width: 100%;
+}
+
+    /*                  2 */
+.how_box .how_bar2 {
+    width: 0;
+    height: 10px;
+    border-radius: 5px;
+    background: #00cccb;
+    transition: all 0.5s;
+}
+.how_box:hover .how_bar2 {
+    width: 45%;
+}
+
+    /*                  3 */
+.how_box .how_bar3 {
+    width: 0;
+    height: 10px;
+    border-radius: 5px;
+    background: #00cccb;
+    transition: all 0.5s;
+}
+.how_box:hover .how_bar3 {
+    width: 240px;
+}
+
+    /*                  4 */
+.how_box .how_bar4 {
+    width: 0;
+    height: 10px;
+    border-radius: 5px;
+    background: #00cccb;
+    transition: all 0.5s;
+}
+.how_box:hover .how_bar4 {
+    width: 240px;
+}
+
+    /*                  5 */
+.how_box .how_bar5 {
+    width: 0;
+    height: 10px;
+    border-radius: 5px;
+    background: #00cccb;
+    transition: all 0.5s;
+}
+.how_box:hover .how_bar5 {
+    width: 240px;
+}
+
+    /*                  6 */
+.how_box .how_bar6 {
+    width: 0;
+    height: 10px;
+    border-radius: 5px;
+    background: #00cccb;
+    transition: all 0.5s;
+}
+.how_box:hover .how_bar6 {
+    width: 240px;
+}
+                    
+    /* ---------------------------------------- 실시간 랭킹 */
+#rank {
+    background: #f2fcfc; 
+    padding: 20px 0 50px;
+}
+#rank h2 {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 900;
+    padding: 5px;
+    margin: 30px 0 20px;
+    transition: all 0.3s;
+}
+#rank:hover h2 {
+    color: #fff;
+    background: #00cccb;
+}
+    /* 펀딩/투자 선택 */
+#rank>p {
+    margin-bottom: 30px;
+    color: #999;
+    font-size: 16px;
+}
+#rank p a:not(.on):hover {color: #00cccb; font-weight: 900;}
+#rank p a.on {color: #00cccb; font-weight: 900;}
+
+    /* 랭크 행 */
+.rank_row {width: 1000px; margin: 0 auto 50px;}
+    /* 순위 숫자 바깥 원 */
+.rank_row .rank_ocirc {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: #00cccb;
+    border-radius: 50%;
+    box-shadow: #666 3px 3px 5px;
+    margin-left: 70px;
+    animation: rank_turn;
+}
+.rank_row:hover .rank_ocirc {
+    animation: rank_turn 1.5s linear infinite;
+}
+@keyframes rank_turn {
+    100% {transform: rotate3d(0, 1, 0, 360deg);}
+}
+    /* 순위 숫자 안쪽 원 */
+.rank_row .rank_icirc {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    border-radius: 50%;
+    background: #fff;
+}
+    /* 순위 원 안 숫자 */
+.rank_row .rank_icirc p {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+    /* 랭크 박스 */
+.rank_row .rank_box {
+    float: left;
+    width: 700px;
+    height: 100px;
+    text-align: left;
+    padding: 20px;
+    margin-left: 30px;
+    background: #fff;
+    box-shadow: #999 3px 3px 5px;
+    cursor: pointer;
+}
+    /* 박스 안 박스(이미지) */
+.rank_row .rank_box .rank_img {
+    float: left;
+    width: 150px;
+    height: 100px;
+    margin-right: 20px;
+    overflow: hidden;
+    background: #999;
+}
+.rank_row .rank_box .rank_img img {width:100%; height:100%; transition: all 0.3s;}
+.rank_row .rank_box:hover .rank_img img {transform: scale(1.1);}
+
+    /* 박스 안 텍스트 : 퍼센트 */
+.rank_row .rank_box .rank_percent {
+    font-weight: 900;
+    font-size: 20px;
+    color: #00cccb;
+    margin-bottom: 5px;
+}
+    /* 달성완료 */
+.rank_row .rank_box .rank_percent span{
+    font-size: smaller;
+    color: #fff;
+    transition: all 0.3s;
+}
+.rank_row .rank_box:hover .rank_percent span{
+    color: #7fe5e5;
+}
+
+    /* 박스 안 텍스트 : 카테고리 */
+.rank_row .rank_box .rank_category {color: #00cccb; margin-bottom: 10px;}
+
+.rank_row .rank_box .rank_title {
+    width: 95%;
+    font-size: 20px;
+    font-weight: 700;
+    transition: all 0.3s ease-out;
+}
+.rank_row .rank_box:hover .rank_title {
+    width: 98%;
+    font-size: 21px;
+    text-decoration: underline;
+}
+
+    /* 더 많은 펀딩 버튼 */
+#rank>a:last-child {
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 900;
+    color: #00cccb;
+    border: #00cccb 1px solid;
+    border-radius: 10px;
+    background: #fff;
+    transition: all 0.3s;
+}
+#rank>a:last-child:hover {
+    color: #fff;
+    background: #00cccb;
+}
+
+
+    /* ---------------------------------------- 얼리버드 */
+#early {
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+    padding: 20px 0 50px;
+}
+#early .early_box {position: relative;}
+#early h2 {
+    display: inline-block;
+    padding: 5px;
+    margin: 50px 0;
+    font-size: 30px;
+    font-weight: 900;
+    transition: all 0.3s;
+}
+#early:hover h2 {
+    color: #fff;
+    background: #00cccb;
+}
+
+    /* 얼리버드 박스 */
+#early ul {position:absolute;}
+#early ul li {
+    float: left;
+    width: 300px;
+    height: 350px;
+    text-align: left;
+    margin-left: 30px;
+    border-radius: 3px;
+    background: #fff;
+    box-shadow: #ccc 0px 3px 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+#early ul li:hover {height: 530px;}
+    /* 얼리버드 이미지 */
+#early ul li>img {
+    width: 300px;
+    height: 150px;
+    background: #666;
+    margin-bottom: 15px;
+    transition: all 0.3s;
+}
+#early ul li:hover>img {box-shadow: #ccc 0px 3px 5px; transform: scale(1.05);}
+
+#early ul li .text {width: 280px; height: 75px; margin: 0 auto;}
+#early ul li p {}
+#early ul li .category {
+    font-size: 12px;
+    font-weight: 300;
+    color:#999;
+}
+#early ul li .title {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+#early ul li .percent {
+    text-align: right;
+    font-weight: 900;
+    color: #00cccb;
+}
+#early ul li .reward {
+    width: 270px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px;
+}
+.reward .reward_title {font-weight: 700; margin-bottom: 3px;}
+.reward .comp {font-size: 10px; line-height: 12px; color: #666;}
+.reward .price {margin-top: 5px;}
+
+#early ul li .reward img {height: 0; transition: all 0.3s;}
+#early ul li:hover .reward img {
+    width: 270px;
+    height: 180px;
+    margin: 5px 0;
+    height: auto;
+}
+
+
+    /* ---------------------------------------- 기획전 */
+#promo {background: #f2fcfc; padding: 30px 0 70px;}
+.promo_box>h2 {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 900;
+    padding: 5px;
+    margin: 20px 0 50px;
+    transition: all 0.3s;
+}
+.promo_box:hover>h2 {
+    color: #fff;
+    background: #00cccb;
+}
+    /* 기획전 박스 */
+.promo_box>ul {width: 1000px; margin: 0 auto;}
+.promo_box>ul>li {
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 350px;
+    text-align: left;
+    margin-left: 30px;
+    border-radius: 3px;
+    background: #fff;
+    box-shadow: #ccc 0px 3px 5px;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+    /* 기획전 박스 커버 */
+.promo_box>ul>li .cover {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    color: #fff;
+    text-align: center;
+    z-index: 100;
+    transition: all 0.5s;
+}
+    /* 박스 커버 컬러  */
+.promo_box>ul>li:nth-child(1) .cover {background: #ee6f68;}
+.promo_box>ul>li:nth-child(2) .cover {background: #f68f3c;}
+.promo_box>ul>li:nth-child(3) .cover {background: #5e8d5a;}
+    /* 박스 커버 텍스트 */
+.promo_box>ul>li .material-icons {
+    display: block;
+    font-size: 150px;
+    opacity: 1;
+    transition: all 0.25s;
+}
+.promo_box>ul>li .text {
+    width: 250px;
+    font-size: 20px;
+    font-weight: 900;
+    padding-top: 70px;
+    margin: 0 auto;
+    opacity: 1;
+    transition: all 0.25s;
+}
+.promo_box>ul>li:hover .cover {width: 0; z-index: -1;}
+.promo_box>ul>li:hover .text {opacity: 0;}
+    /* 박스 컨텐츠 */
+.promo_box>ul>li .promo_contents {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    padding-top: 5px;
+}
+.promo_contents li {padding:10px;}
+    /* 박스 컨텐츠 이미지 영역 */
+.promo_contents li .promo_img {
+    float: left;
+    width: 100px;
+    height: 60px;
+    margin-right: 10px;
+    overflow: hidden;
+}
+.promo_contents li .promo_img img {transition: all 0.3s;}
+.promo_contents li:hover .promo_img img {transform:scale(1.1);}
+    /* 박스 컨텐츠 제목 */
+.promo_contents li .promo_title {font-size: 13px;}
+.promo_contents li:hover .promo_title {text-decoration: underline;}
+    /* 박스 컨텐츠 현황 */
+.promo_contents li .promo_progress span {font-size: 12px;}
+.promo_contents li .promo_progress span:first-child {
+    font-weight: 900;
+    line-height: 20px;
+    color: #00cccb;
+}
+    /* 박스 컨텐츠 구분선 */
+.promo_contents li hr {
+    height: 1px;
+    clear: both;
+    border: none;
+    border-bottom: 1px solid #999;
+    padding-top: 10px;
+    margin-bottom: 5px;
+}
+.promo_contents li:last-child {text-align: center;}
+.promo_contents li:last-child:hover {font-size: 15px; font-weight: 900; color: #00cccb;}
+
+
+    /* ---------------------------------------- 오픈하기 */
+#open {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+#open .bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../image/open_bg.jpg) no-repeat center center;
+    background-size: 100%;
+    overflow: hidden;
+    z-index: -1;
+    transition: all 1.0s;
+}
+#open:hover .bg {background-size: 105%; filter: brightness(0.7);}
+    /* 오픈하기 영역 */
+.open_box {width: 1000px; padding-top: 100px; margin: 0 auto ;}
+    /* 오픈하기 제목-소제목 */
+.open_box h2 {
+    font-size: 70px;
+    font-weight: 900;
+    color: #fff;
+    text-shadow: #333 0px 0px 10px;
+}
+.open_box h3 {
+    font-size: 30px;
+    color: #fff;
+    margin: 30px 0 90px;
+    text-shadow: #333 0px 0px 10px;
+}
+    /* 오픈하기 모든 버튼 */
+.open_btn {
+    float: left;
+    position: relative;
+    width: 350px;
+    height: 70px;
+    margin-left: 100px;
+    background: rgba(255, 255, 255, 0.5);
+    transition: all 0.3s;
+}
+.open_btn span{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 900;
+    transition: all 0.3s;
+}
+    /* 펀딩오픈하기 버튼 */
+.left .btn_text {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+}
+.left .material-icons {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    display: inline-block;
+}
+    /* 투자오픈하기 버튼 */
+.right .btn_text {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+}
+.right .material-icons {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    display: inline-block;
+}
+.open_btn:hover {background: rgba(255, 255, 255, 1.0);}
+.open_btn:hover span {color: #333;}
+
+
+/* <============================== Footer */
+footer {
+    width: 100%;
+    height: 300px;
+    background: #333;
+}
+    /* 푸터 메뉴 */
+.footer_nav {
+    width: 1000px;
+    font-weight: 900;
+    color: #fff;
+    padding-left: 50px;
+    margin: 0 auto;
+}
+.footer_nav>div {
+    /* display: inline; */
+    position: relative; 
+    float: left;
+    width: 160px;
+    height: 30px;
+    text-align: center;
+    padding-top: 20px;
+    margin: 0 40px;     
+}
+    /* 푸터 폴다운 메뉴 */
+.footer_nav>div ul {
+    position: absolute;
+    top: 50px;
+    left: -130px;
+    color: #333;
+    width: 450px;
+    z-index: 100;
+    background: #fff;
+}
+.footer_nav>div ul li {
+    float: left;
+    width: 225px;
+    padding: 20px 0 10px;
+    display: none;
+}
+.footer_nav>div:last-child strong {font-weight: 900;}
+.footer_nav>div:hover {text-decoration: underline;}
+.footer_nav>div:hover ul li {display: block; height: 30px;}
+.footer_nav>div ul li a:hover {text-decoration: underline;}
+    /* footer_nav 밑 구분선 */
+footer hr {
+    height: 1px;
+    border: none;
+    background: #999;
+    margin: 10px 0;
+}
+    /* footer 최하단 */
+.footer_bottom {
+    width: 1000px;
+    text-align: center;
+    color: #ddd;
+    line-height: 20px;
+    margin: 0 auto;
+}
+.footer_bottom strong {font-weight: 900; color: #fff;}
+.footer_bottom a:hover {text-decoration: underline;}
