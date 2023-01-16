@@ -29,10 +29,10 @@ $(document).ready(function(){
             
             if(init == false){
                 $(".topmenu>li").eq(val).find("ul").stop(true, true).show("slow");
-                $(".topimg li").eq(val).stop(true, true).show("slow");
+                $(".topimg li").eq(val).stop(true, true).show("100");
             } else {
                 $(".topmenu>li").eq(val).find("ul").stop(true, true).show();
-                $(".topimg li").eq(val).stop(true, true).show();
+                $(".topimg li").eq(val).stop(true, true).show("100");
             }
             
             old = val;
@@ -82,9 +82,9 @@ $(document).ready(function(){
         }
         
         if(oldidx != index) {
-            $(".visual_tab li").eq(oldidx).stop(true, true).removeClass("active", 600);
         }
-        $(".visual_tab li").eq(index).stop(true, true).addClass("active", 600);
+        $(".visual_tab li").eq(oldidx).stop(true, true).removeClass("active");
+        $(".visual_tab li").eq(index).stop(true, true).addClass("active");
         oldidx = index;
     }
 
@@ -95,20 +95,20 @@ $(document).ready(function(){
         }
         slideImg(index, 1);
     }
-
+    // start visualImage Move
     auto = setInterval(slideAuto, 4000);
 
-    $(".visual_tab li").click(function() {
+    // visual_banner click(Warp)
+    $(".visual_tab li").click(function() {        
         index = $(this).index();
+        let interval = oldidx - index;
 
-        for(i = 1; i <= img_n; i++) {$(".visual_img ul li.i" + i).appendTo(".visual_img ul");}
-        $(".visual_img ul li:last").prependTo(".visual_img ul");
-        $(".visual_img ul li:last").prependTo(".visual_img ul");
-            
+        if(interval > 0) {
+            for(i = 0; i < interval; i++) slideImg(index, 0);
+        } else {
+            for(i = 0; i < -interval; i++) slideImg(index, 1);
+        }
         clearInterval(auto);
-
-        for(i = 1; i <= index + 1; i++) {slideImg(index, 1);}
-
         auto = setInterval(slideAuto, 4000);
     });
 
